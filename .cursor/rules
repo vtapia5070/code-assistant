@@ -1,0 +1,33 @@
+# React Component Rules
+
+- Use functional components with TypeScript
+- Props should be properly typed with interfaces
+- Use React hooks (useState, useEffect) instead of class components
+- Components should be in PascalCase
+- Use destructuring for props
+- Include proper imports for React and types
+
+Example:
+```tsx
+import React, { useState } from 'react';
+
+interface ButtonProps {
+  label: string;
+  onClick: () => void;
+  disabled?: boolean;
+}
+
+export const Button: React.FC<ButtonProps> = ({ label, onClick, disabled = false }) => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  return (
+    <button 
+      onClick={onClick} 
+      disabled={disabled || isLoading}
+      className="btn-primary"
+    >
+      {label}
+    </button>
+  );
+};
+```
