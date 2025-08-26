@@ -1,0 +1,76 @@
+# NestJS Backend Rules
+
+## Project Structure
+- Follow NestJS module-based architecture
+- Organize code by feature, not by type
+- Use dependency injection throughout the application
+- Keep controllers thin, business logic in services
+
+## Module Organization
+```
+src/
+├── modules/
+│   ├── users/
+│   │   ├── users.controller.ts
+│   │   ├── users.service.ts
+│   │   ├── users.module.ts
+│   │   ├── dto/
+│   │   ├── entities/
+│   │   └── interfaces/
+│   └── auth/
+├── common/
+│   ├── decorators/
+│   ├── guards/
+│   ├── interceptors/
+│   └── pipes/
+├── config/
+└── main.ts
+```
+
+## Controller Rules
+- Use proper HTTP decorators (@Get, @Post, @Put, @Delete)
+- Implement proper status codes and responses
+- Use DTOs for request/response validation
+- Keep controllers focused on HTTP concerns only
+- Use proper error handling with filters
+
+## Service Rules
+- Implement business logic in services
+- Use dependency injection for external dependencies
+- Return proper types and handle errors gracefully
+- Use async/await for database operations
+- Implement proper logging
+
+## DTO and Validation
+- Create separate DTOs for create, update, and response
+- Use class-validator decorators for validation
+- Implement proper transformation with class-transformer
+- Use swagger decorators for API documentation
+
+## Database Rules
+- Use TypeORM entities with proper relationships
+- Implement repository pattern
+- Use transactions for complex operations
+- Handle database errors appropriately
+- Use migrations for schema changes
+
+## Security Rules
+- Implement proper authentication and authorization
+- Use guards for route protection
+- Validate and sanitize all inputs
+- Implement rate limiting
+- Use environment variables for sensitive data
+
+## Error Handling
+- Use custom exception filters
+- Implement proper logging
+- Return consistent error responses
+- Handle async errors properly
+- Use interceptors for response transformation
+
+## Testing
+- Write unit tests for services
+- Write integration tests for controllers
+- Use Jest and Supertest for testing
+- Mock external dependencies
+- Test error scenarios

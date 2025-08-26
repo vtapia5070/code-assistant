@@ -1,0 +1,38 @@
+# Project Rules for AI Coding Assistants Toolkit
+
+## Repository Structure
+- This is a documentation and tool collection repository
+- All code examples should be well-commented and educational
+- Maintain consistent formatting across all documentation files
+- Use clear, descriptive file and folder names
+
+## Documentation Standards
+- Write documentation in Markdown format
+- Include practical examples for all prompts and techniques
+- Use code blocks with appropriate language syntax highlighting
+- Add table of contents for longer documents
+- Keep documentation concise but comprehensive
+
+## Code Examples
+- Provide complete, runnable code examples when possible
+- Include both simple and advanced use cases
+- Add comments explaining the reasoning behind specific approaches
+- Use realistic but simplified examples that demonstrate the concept
+
+## File Organization
+- Group related prompts and techniques in dedicated folders
+- Use consistent naming conventions across the repository
+- Include README files in each major section
+- Maintain a logical hierarchy of information
+
+## Content Guidelines
+- Focus on practical, actionable advice
+- Include both beginner and advanced techniques
+- Provide context for when to use specific approaches
+- Keep content up-to-date with latest AI assistant features
+
+## Quality Standards
+- Test all code examples before including them
+- Verify that prompts work as described
+- Include troubleshooting tips for common issues
+- Add version information for tool-specific content
